@@ -1,0 +1,19 @@
+@import "../../../styles/prepend";
+
+.pagination {
+    @include flex;
+    justify-content: center;
+    margin-top: 31px;
+    
+    .pageItem {
+        @include text-body-400-18;
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+    .activePage {
+        @include text-body-400-18;
+        font-weight: 600;
+        background: $color-background-light-blue-gray;
+        border-radius: 10px;
+    }
+}

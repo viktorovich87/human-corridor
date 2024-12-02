@@ -1,0 +1,9 @@
+@import "../../../../styles/prepend";
+
+.labelWrapper {
+  margin-bottom: 8px;
+  outline: none;
+  .label {
+    @include input-label;
+  }
+}

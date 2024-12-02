@@ -1,0 +1,146 @@
+@mixin text-h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 60px;
+  text-align: center;
+  color: $color-text-main-black;
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@mixin text-h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: $color-text-main-black;
+}
+
+@mixin text-subheading-1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  color: $color-text-main-neutral-4;
+}
+
+@mixin text-subheading-2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: $color-text-main-black;
+}
+
+@mixin text-subheading-3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: $color-text-main-black;
+}
+
+@mixin text-subheading-4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 178%;
+  color: $color-text-main-black;
+}
+
+@mixin text-subheading-5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-text-main-black;
+}
+
+@mixin text-subheading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-text-main-neutral-4;
+}
+
+@mixin input-label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-text-main-neutral-4;
+}
+
+@mixin text-body-400-18 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: black;
+  line-height: 178%;
+}
+
+@mixin text-body-1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-text-main-neutral-4;
+}
+
+@mixin text-body-2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: $color-text-main-black;
+}
+
+@mixin text-body-3 {
+  
+}
+
+@mixin text-body-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  color: $color-text-main-light-1;
+}
+
+@mixin copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: $color-text-main-light-1;
+}
+
+@mixin emergency-message {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 136%;
+  color: $color-text-white;
+  text-align: center;
+
+  @include mobile {
+    font-size: 16px;
+  }
+}

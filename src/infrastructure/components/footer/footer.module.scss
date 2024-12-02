@@ -1,0 +1,51 @@
+@import "../../../styles/prepend";
+
+.footer {
+  @include footer;
+
+  .inner {
+    width: 1146px;
+    padding: 17px 0 9px 0;
+    @include flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .logo {
+      height: auto;
+      width: 250px;
+    }
+
+    .legalLinks, .legalLinksMobile {
+      @include text-body-link;
+      
+      &:hover {
+        @include text-decoration-none;
+      }
+    }
+
+    .copyright, .copyrightMobile {
+      @include copyright;
+    }
+
+    .legalLinks, .copyright {
+      @include mobile {
+        display: none
+      }
+    }
+
+    .copyrightWrapperMobile {
+      display: none;
+      @include mobile {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: initial;
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+  }
+}

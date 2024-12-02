@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100%;
+  padding-top: 60px;
+
+  .formCard {
+    border: 1px solid #0175B2;
+    border-radius: 20px;
+  }
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  width: 40px;
+  img {
+    width: 40px;
+  }
+}
+
+.resultContainer {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: 30px
+}
+
+.resultCompaniesContainer {
+   width: 100%;
+}

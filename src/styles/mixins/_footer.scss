@@ -1,0 +1,11 @@
+@mixin footer {
+  width: 100%;
+  display: flex;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 100;
+  justify-content: center;
+  background: $color-background-white;
+}

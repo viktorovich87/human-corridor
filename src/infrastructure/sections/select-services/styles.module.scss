@@ -1,0 +1,53 @@
+@import "../../../styles/prepend";
+
+.wrapper {
+  @include full-width;
+  padding-top: 60px;
+
+  .subheading {
+    @include text-subheading;
+  }
+
+  .sectionTitle {
+    @include text-h1
+  }
+
+  .inner {
+    @include grid-4-columns;
+    @include full-width;
+    gap: 30px 30px;
+    margin-top: 32px;
+
+    .itemCard {
+      height: 200px;
+      @include main-service-card;
+
+      @include mobile {
+        height: 140px;
+        width: 164px;
+      }
+
+      &:hover {
+        border: 1px solid $color-main-blue;
+      }
+
+      .itemIcon {
+        max-width: 52px;
+        max-height: 52px;
+
+        @include mobile {
+          max-width: 30px;
+          max-height: 32px;
+        }
+      }
+
+      .itemTitle {
+        @include text-subheading-2;
+      }
+    }
+    @include mobile {
+      @include grid-2-columns;
+      gap: 16px auto;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../styles/prepend";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .subTitle {
+    @include text-subheading;
+  }
+  
+  .title {
+    @include text-h1
+  }
+}

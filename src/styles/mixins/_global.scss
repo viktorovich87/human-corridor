@@ -1,0 +1,26 @@
+@mixin flex {
+  display: flex;
+}
+
+@mixin menu-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translate(0px, 72px) !important;
+  z-index: 100;
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin text-decoration-none {
+  text-decoration: none;
+}
+
+@mixin focus-visible-input-border {
+  border: 2px solid #87D68D;
+}
+
+@mixin default-border-input {
+  border: 1px solid #DADEE3;
+}

@@ -1,0 +1,33 @@
+@import "../../../styles/prepend";
+
+.wrapper {
+
+  h2 {
+    @include text-h2;
+    margin-top: 32px;
+  }
+
+  .inner {
+    margin-top: 40px;
+
+    .innerItemWrapper {
+      margin-bottom: 24px;
+  
+      h4 {
+        @include text-subheading-1;
+        text-align: start;
+      }
+  
+      p {
+        margin-top: 12px;
+        @include text-body-1;
+      }
+    }
+  } 
+}
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+@mixin grid-4-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@mixin grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@mixin grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@mixin grid-1-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px
+}

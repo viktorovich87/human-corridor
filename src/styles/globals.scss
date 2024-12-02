@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@import "./prepend";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+nav {
+  @include mobile {
+    display: none;
+  }
+}
+
+ol {
+  @include flex;
+  @include text-subheading;
+  color: $color-text-main-neutral-6;
+
+  li:last-child {
+    color: $color-text-main-neutral-4;
+    margin-left: 5px;
+  }
+
+  li:nth-child(3n - 0) {
+    display: none;
+  }
+}
+
+.resultContainer {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: 30px;
+}
+
+.spinner {
+  width: 40px !important;
+  max-width: 40px !important;
+  min-height: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  position: relative;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  cursor: pointer;
+  @include mobile {
+   display: none; 
+  }
+}
+
+#resultContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  &>div:first-child {
+    width: 65%;
+    margin-right: 20px;
+    @include mobile {
+      width: 100%;
+      margin: inherit;
+    }
+  }
+
+  &>div:last-child {
+    width: 35%;
+  }
+}

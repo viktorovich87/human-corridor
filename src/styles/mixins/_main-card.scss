@@ -1,0 +1,15 @@
+@mixin main-service-card {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: $color-background-light-blue;
+  @include default-border-input;
+  border-radius: 20px;
+
+  @include mobile {
+    padding: 22px 16px 16px 16px;
+  }
+}

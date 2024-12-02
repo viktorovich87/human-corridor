@@ -1,0 +1,59 @@
+@import "../../../styles/prepend";
+
+.wrapper {
+  margin-top: 32px;
+
+  .inner {
+    background: $color-main-blue-5;
+    border: 1px solid $color-main-blue;
+    border-radius: 20px;
+    padding: 32px 32px 40px 32px;
+    @include flex;
+    justify-content: space-between;
+    align-items: self-end;
+
+    .columnWrapper {
+      width: 100%;
+      margin-right: 24px;
+
+      @include mobile {
+        margin-right: inherit;
+        margin-bottom: 16px;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      padding: 24px 16px 24px 16px;
+    }
+  }
+}
+.spinnerSelect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    position: absolute !important;
+    z-index: 999;
+    width: 40px !important;
+    height: 40px !important;
+    & > span {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+  .spinner {
+    position: relative;
+  }
+
+  & > div {
+    width: 100%;
+  } 
+}
+
+.textFieldContainer{
+  position: relative;
+}
+.search-list-container{
+  position: absolute;
+}

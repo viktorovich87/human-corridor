@@ -1,0 +1,61 @@
+@import "../../../styles/prepend";
+
+.breadcrumbsWrapper {
+  display: flex;
+
+  .lastBreadcrumbsLabel {
+    @include text-subheading;
+    color: $color-text-main-neutral-6;
+    color: $color-text-main-neutral-4;
+    margin-left: 5px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  padding-top: 60px;
+
+  .formCard {
+    border: 1px solid #0175B2;
+    border-radius: 20px;
+  }
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  width: 40px;
+  img {
+    width: 40px;
+  }
+}
+
+.banner {
+  width: 460px;
+  height: 100%;
+  cursor: pointer;
+  @include mobile {
+    display: none;
+  }
+}
+
+.resultContainer{
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: 30px;
+
+  @include mobile {
+    @include grid-1-columns;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+.resultCompaniesContainer{
+   width: 100%;
+}
